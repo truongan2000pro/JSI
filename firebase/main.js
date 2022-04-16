@@ -9,16 +9,17 @@ const db = firebase.firestore();
 async function getData(collectionName) {
   let data = await db.collection(collectionName).get();
   data.forEach((doc) => {
+    console.log(doc.id);
     console.log(doc.data());
   });
 }
-let docRef = db.collection("test").doc("FduOCQax6CsUCwSSQe3N").get();
-let doc = db.collection("test").where("name", "!=", "Minh").get();
+// let docRef = db.collection("test").doc("FduOCQax6CsUCwSSQe3N").get();
+// let doc = db.collection("test").where("uid", "==", "firebase.auth().currentUser.uid").get();
 
-doc
-  .then((data) => {
-    return data.forEach((doc) => console.log(doc.data()));
-  })
-  .catch((error) => console.log(error));
+// doc
+//   .then((data) => {
+//     return data.forEach((doc) => console.log(doc.data()));
+//   })
+//   .catch((error) => console.log(error));
 // getData("chat");
-// getData("test");
+getData("test");

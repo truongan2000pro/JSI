@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="./main.js"></script>
+    
+    <title>Document</title>
+</head>
+<body>
+    <h2>MÀN ĐĂNG KÝ</h2>
+    <div class="form-signup-wrapper wrapper-css">
+        <form class="signup-form form-css" action="">
+            <label for="signup-email">Email</label>
+            <input type="email" id="signup-email">
+            <label for="signup-pass">Password</label>
+            <input type="password" id="signup-pass">
+            <button id="sign-up-btn" type="submit" >SIGN UP</button>
+        </form>
+    </div>
+    <a style="margin-top: 20px; display: block; text-align: center;" href="./login.html">To Login</a>
+</body>
+<script type="module">
+    // Your web app's Firebase configuration
+    firebase.initializeApp({
+    apiKey: "AIzaSyB6zg0IBX9uXLDYDkvioKMg-EWbuSeVWvA",
+    authDomain: "fir-project-6ae11.firebaseapp.com",
+    projectId: "fir-project-6ae11",
+    storageBucket: "fir-project-6ae11.appspot.com",
+    messagingSenderId: "646082043832",
+    appId: "1:646082043832:web:d3b4843f454e9a5a34394d",
+  });
+
+  </script>
+</html>
